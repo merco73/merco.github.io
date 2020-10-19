@@ -58,7 +58,7 @@ li.nav-item{
     margin-right: 20px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
     .margen-logo{
         margin-left: 0px;
         margin-top: 0px;
@@ -91,11 +91,81 @@ li.nav-item{
     
 }
 
-.header-area h2 span{
-color: chartreuse;
+
+/*Typed.js*/
+.animate{
+    font-weight: 100;
 }
 
-.animate{
 
-    font-weight: 100;
+/*Social media*/
+.social-icons li {
+    display: inline;
+    font-size: 0.8em;
+    padding:5px 0.5px;
+    margin-right: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .social-icons{
+      margin-left: -25px;
+  }
+
+
+  .social-icons a{
+      padding: 5px 11px;
+      color: whitesmoke;
+  }
+
+  .social-icons a:hover {
+    color: white;
+    background-color: #00b0dc;
+
+  }
+
+
+.social-media{
+      margin-top: 25px;
+  }
+
+
+  /*Smooth Scroll*/
+
+.middle{
+      position: relative;
+      top: 17%;
+      left: 96%;
+      transform: translate(-50%, -50%);
+  }
+
+.mouse{
+    width: 35px;
+    height: 60px;
+    border: 3px solid #ffffff;
+    border-radius: 60px;
+}
+
+.mouse::before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top:13px;
+    background: white;
+    left: 3.5%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    opacity: 1;
+    animation: mouse 2s infinite;
+}
+
+@keyframes mouse{
+    from{
+        opacity: 1;
+        top: 13px;
+    }
+    to{
+        opacity: 0;
+        top: 40px;
+    }
 }
