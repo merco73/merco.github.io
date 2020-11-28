@@ -2,7 +2,9 @@ h1{
     font-size: 45px;
 }
 
-
+body{
+    overflow-x: hidden;
+}
 /*HEADER*/
 
 
@@ -108,7 +110,7 @@ li.nav-item{
   }
 
   .social-icons{
-      margin-left: -25px;
+      margin-left: 3px;
   }
 
 
@@ -170,6 +172,12 @@ li.nav-item{
     }
 }
 
+@media only screen and (max-width: 1100px) {
+    .middle{
+        display: none;
+       }
+  }
+
 
 /*Footer*/
 .logo-footer{
@@ -184,6 +192,8 @@ li.nav-item{
     height: 900px;
 }*/
 
+
+/*About*/
 
 .imgAbout{
     width: 330px;
@@ -224,6 +234,103 @@ p{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     text-align: left;
-    
+}
+
+
+.liH{
+    display: inline;
+}
+
+div div ul li{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    list-style: none;
+    padding-left: 0px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+div div ul{
+    padding: 0px;
+}
+
+
+.infoAbout{
+    position: relative;
+    margin-right: 10px;
+    padding-bottom: 1px;
+    color: #a1a1a1;
+    font-weight: 700;
+    /*text-decoration: underline;*/
+    border-bottom: 2px solid;
+}
+
+.infoNone{
+    text-decoration: none;
+}
+
+
+.skill-btn {
+    background: #00b0dc;
+    border: 1px solid #00b0dc;
+    color: #fff;
+    margin-left: 8px;
+}
+
+
+.btn-a {
+ float: left;
+ animation-delay: 2s;
+ cursor: pointer;
+ display: inline-block;
+ font-size: 14px;
+ font-weight: 300;
+ letter-spacing: 1px;
+ line-height: 18px;
+ padding: 14px 22px;
+ text-align: center;
+ text-decoration: none;
+ text-transform: uppercase;
+ -webkit-animation-delay: 2s;
+ -webkit-transition: background .3s ease-in-out, color .3s ease-in-out;
+ animation-delay: 2s;
+ transition: background .3s ease-in-out, color .3s ease-in-out;
+ white-space: nowrap;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ border-radius: 3px;
+ margin-top: 20px;
+ text-decoration: none;
+ margin-right: 15px;
+}
+
+.btn-a:hover{
+    text-decoration: none;
+}
+
+.down-btn {
+    background: none;
+    color: #2B2F37;
+    border: 1px solid #00b0dc;
+}
+
+
+
+
+
+.section-title {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 60px;
+}
+
+.section-title h2 span {
+    color: #00B0DC;
+}
+
+
+.card-body img{
+    margin-bottom: 5%;
 }
 
