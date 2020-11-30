@@ -334,3 +334,143 @@ div div ul{
     margin-bottom: 5%;
 }
 
+
+
+
+
+
+
+/*SKILLS*/
+
+.bgAbout{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/spider.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+.skill{
+    background-color: #222222;
+    width: 100%;
+    height: 100vh;
+    padding-top: 60px;
+}
+
+.skCont{
+    width: 70%;
+    height: 10px;
+    border-radius: 10px;
+    border: 3px solid black;
+    margin: 10px auto;
+    margin-bottom: 5%;
+}
+
+.sH2{
+    margin-left: 15%;
+    color: floralwhite;
+    font-size: 16px;
+}
+
+.bar{
+    box-shadow: 0px 0px 10px 4px aquamarine;
+    height: 4px;
+    margin: 2px 0px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+/*HTML*/
+.skHtml{
+    animation: skHtml 2s;
+    width: 90%;
+}
+
+@keyframes skHtml{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+/*CCS*/
+.skCss{
+    animation: skCss 2s;
+    width: 85%;
+}
+
+@keyframes skCss{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+
+
+/*JavaScript*/
+.skJs{
+    animation: skJs 2s;
+    width: 75%;
+}
+
+@keyframes skJs{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+
+/*WordPress*/
+.skWord{
+    animation: skWord 2s;
+    width: 95%;
+}
+
+@keyframes skWord{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+}
+
+
+/*PHP*/
+.skPhp{
+    animation: skPhp 2s;
+    width: 75%;
+}
+
+@keyframes skPhp{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+/*MySql*/
+.skSql{
+    animation: skSql 2s;
+    width: 85%;
+}
+
+@keyframes skSql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
