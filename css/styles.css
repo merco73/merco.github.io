@@ -403,9 +403,9 @@ div div ul{
 }
 
 /*HTML*/
-.skHtml{
-    animation: skHtml 2s;
-    width: 90%;
+#skHtml{/*
+    animation: skHtml 2s;*/
+    width: 0%;
 }
 
 @keyframes skHtml{
@@ -418,9 +418,8 @@ div div ul{
 }
 
 /*CCS*/
-.skCss{
-    animation: skCss 2s;
-    width: 85%;
+#skCss{
+    width: 0%;
 }
 
 @keyframes skCss{
@@ -435,9 +434,8 @@ div div ul{
 
 
 /*JavaScript*/
-.skJs{
-    animation: skJs 2s;
-    width: 75%;
+#skJs{
+    width: 0%;
 }
 
 @keyframes skJs{
@@ -451,9 +449,8 @@ div div ul{
 
 
 /*WordPress*/
-.skWord{
-    animation: skWord 2s;
-    width: 95%;
+#skWord{
+    width: 0%;
 }
 
 @keyframes skWord{
@@ -467,9 +464,8 @@ div div ul{
 
 
 /*PHP*/
-.skPhp{
-    animation: skPhp 2s;
-    width: 75%;
+#skPhp{
+    width: 0%;
 }
 
 @keyframes skPhp{
@@ -482,9 +478,8 @@ div div ul{
 }
 
 /*MySql*/
-.skSql{
-    animation: skSql 2s;
-    width: 85%;
+#skSql{
+    width: 0%;
 }
 
 @keyframes skSql{
