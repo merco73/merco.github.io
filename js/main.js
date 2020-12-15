@@ -10,7 +10,7 @@ var typed = new Typed('.animate', {
     strings:[ 
       "Web Developer",
       "UI/UX Developer",
-      "Graphic Designer"
+      "Front End Developer"
     ],
     typeSpeed:30,
     backSpeed:30,
@@ -69,10 +69,33 @@ window.addEventListener('scroll', function(){
 
 
 //Efecto Counter
-
 $(document).ready(function(){
   $(".counter").counterUp({
     delay: 10,
     time: 1200
+  });
+});
+
+
+
+//My experience Texto
+//const trunc = document.querySelector('.p-trunc');
+//trunc.innerText = trunc.innerText.substring(0,80)
+
+
+
+
+//Anclas Efecto scroll 
+$(document).ready(function() {
+  $('a[href^="#"]').click(function() {
+    var destino = $(this.hash);
+    if (destino.length == 0) {
+      destino = $('a[name="' + this.hash.substr(1) + '"]');
+    }
+    if (destino.length == 0) {
+      destino = $('html');
+    }
+    $('html, body').animate({ scrollTop: destino.offset().top }, 500);
+    return false;
   });
 });
