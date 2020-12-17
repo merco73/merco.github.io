@@ -99,3 +99,50 @@ $(document).ready(function() {
     return false;
   });
 });
+
+
+
+//Anclas Efecto scroll 
+
+
+
+
+
+
+//Ajax Form
+$(document).ready(function(){
+  $('#submit-btn').click(function(event){
+    event.preventDefault();
+     $.ajax({
+        dataType: 'JSON',
+        url: 'sendmail.php',
+        type: 'POST',
+        data: $('#contact').serialize(),
+        beforeSend: function(xhr){
+          $('#submit-btn').html('PROCESANDO...');
+        },
+        success: function(response){
+          if(response){
+            console.log(response);
+            if(response['isSuccess']){
+             $('#msg').html('<div class="alert alert-success">'+ response['msg']  +'</div>');
+              $('input, textarea').val(function() {
+                 return this.defaultValue;
+              });
+            }
+            else{
+              $('#msg').html('<div class="alert alert-danger">'+ response['msg'] +'</div>');
+            }
+          }
+        },
+        error: function(){
+          $('#msg').html('<div class="alert alert-danger">Ocurrio un error. Por favor intentar mas tarde.</div>');
+        },
+        complete: function(){
+          $('#submit-btn').html('ENVIAR');
+        }
+      });
+  });
+});
+
+

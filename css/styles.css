@@ -1079,9 +1079,7 @@ div div ul{
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #666;
-    color: #ddd;
     font-size: 14px;
-    text-transform: uppercase;
     outline: none;
     transition: border-color 0.2s;
 
@@ -1090,13 +1088,13 @@ div div ul{
 
 
 .app-form-control::placeholder{
-color: #666;
+color: rgb(95, 95, 95);
 
 }
 
 
 .app-form-control:focus{
-    color: #ddd;   
+    color: rgb(44, 44, 44);   
     }
 
 
