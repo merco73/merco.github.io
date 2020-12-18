@@ -31,7 +31,7 @@ window.addEventListener('scroll', function(){
 
 
     let posicionObj1=skSql.getBoundingClientRect().top;
-    console.log(posicionObj1);
+    //console.log(posicionObj1);
     let tamañoDePantalla = window.innerHeight/1;
 
     if(posicionObj1 < tamañoDePantalla){
@@ -99,12 +99,6 @@ $(document).ready(function() {
     return false;
   });
 });
-
-
-
-//Anclas Efecto scroll 
-
-
 
 
 
